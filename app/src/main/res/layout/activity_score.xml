@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_dark"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/logo_height"
+            android:layout_marginEnd="@dimen/large_space"
+            android:layout_marginStart="@dimen/large_space"
+            android:layout_marginTop="@dimen/question_space"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="@dimen/question_space"
+            android:layout_marginStart="@dimen/question_space"
+            android:fontFamily="@font/moonhouse"
+            android:text="Your Result:"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/quest_font_large" />
+
+        <TextView
+            android:id="@+id/score_summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/button_space"
+            android:layout_marginTop="@dimen/question_space"
+            android:fontFamily="@font/moonhouse"
+            android:gravity="center_horizontal"
+            android:text="TextView"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/quest_font" />
+
+        <TextView
+            android:id="@+id/text_summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/large_space"
+            android:layout_marginTop="@dimen/question_space"
+            android:fontFamily="@font/moonhouse"
+            android:gravity="center_horizontal"
+            android:text="TextView"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/quest_font" />
+
+        <Button
+            android:id="@+id/reset_game_button"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_submit"
+            android:fontFamily="@font/moonhouse"
+            android:paddingBottom="@dimen/button_space"
+            android:paddingTop="@dimen/button_space"
+            android:text="New game"
+            android:textColor="@color/colorAccent" />
+
+    </LinearLayout>
+
+</ScrollView>

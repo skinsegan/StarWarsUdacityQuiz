@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_dark"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/quizLogo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/logo_height"
+            android:layout_marginEnd="@dimen/large_space"
+            android:layout_marginStart="@dimen/large_space"
+            android:layout_marginTop="@dimen/small_space"
+            android:contentDescription="Star Wars Logo"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/question_space"
+            android:layout_marginStart="@dimen/question_space"
+            android:fontFamily="@font/moonhouse"
+            android:text="@string/quest1"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="@dimen/quest_font" />
+
+        <RadioGroup
+            android:id="@+id/quest_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/small_space"
+                android:layout_marginTop="@dimen/button_space"
+                android:background="@drawable/button_state"
+                android:button="@null"
+                android:fontFamily="@font/moonhouse"
+                android:paddingBottom="@dimen/button_space"
+                android:paddingTop="@dimen/button_space"
+                android:text="@string/ans1a"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/small_space"
+                android:layout_marginTop="@dimen/button_space"
+                android:background="@drawable/button_state"
+                android:button="@null"
+                android:fontFamily="@font/moonhouse"
+                android:paddingBottom="@dimen/button_space"
+                android:paddingTop="@dimen/button_space"
+                android:text="@string/ans1b"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/small_space"
+                android:layout_marginTop="@dimen/button_space"
+                android:background="@drawable/button_state"
+                android:button="@null"
+                android:fontFamily="@font/moonhouse"
+                android:paddingBottom="@dimen/button_space"
+                android:paddingTop="@dimen/button_space"
+                android:text="@string/ans1c"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/question_space"
+                android:layout_marginTop="@dimen/button_space"
+                android:background="@drawable/button_state"
+                android:button="@null"
+                android:checked="false"
+                android:fontFamily="@font/moonhouse"
+                android:paddingBottom="@dimen/button_space"
+                android:paddingTop="@dimen/button_space"
+                android:text="@string/ans1d"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/question_space"
+            android:layout_marginStart="@dimen/question_space"
+            android:layout_marginTop="@dimen/question_space"
+            android:fontFamily="@font/moonhouse"
+            android:text="@string/quest2"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="@dimen/quest_font" />
+
+        <RadioGroup
+            android:id="@+id/quest_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/small_space"
+                android:layout_marginTop="@dimen/button_space"
+                android:background="@drawable/button_state"
+                android:button="@null"
+                android:fontFamily="@font/moonhouse"
+                android:paddingBottom="@dimen/button_space"
+                android:paddingTop="@dimen/button_space"
+                android:text="@string/ans2a"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/small_space"
+                android:layout_marginTop="@dimen/button_space"
+                android:background="@drawable/button_state"
+                android:button="@null"
+                android:fontFamily="@font/moonhouse"
+                android:paddingBottom="@dimen/button_space"
+                android:paddingTop="@dimen/button_space"
+                android:text="@string/ans2b"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/small_space"
+                android:layout_marginTop="@dimen/button_space"
+                android:background="@drawable/button_state"
+                android:button="@null"
+                android:fontFamily="@font/moonhouse"
+                android:paddingBottom="@dimen/button_space"
+                android:paddingTop="@dimen/button_space"
+                android:text="@string/ans2c"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/question_space"
+                android:layout_marginTop="@dimen/button_space"
+                android:background="@drawable/button_state"
+                android:button="@null"
+                android:checked="false"
+                android:fontFamily="@font/moonhouse"
+                android:paddingBottom="@dimen/button_space"
+                android:paddingTop="@dimen/button_space"
+                android:text="@string/ans2d"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/question_space"
+            android:layout_marginStart="@dimen/question_space"
+            android:layout_marginTop="@dimen/question_space"
+            android:fontFamily="@font/moonhouse"
+            android:text="@string/quest3"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="@dimen/quest_font" />
+
+        <EditText
+            android:id="@+id/quest_three_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/question_space"
+            android:layout_marginLeft="@dimen/question_space"
+            android:layout_marginRight="@dimen/question_space"
+            android:layout_marginTop="@dimen/small_space"
+            android:backgroundTint="@color/colorPrimary"
+            android:fontFamily="@font/moonhouse"
+            android:hint="@string/answer"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/colorAccent" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/question_space"
+            android:layout_marginStart="@dimen/question_space"
+            android:layout_marginTop="@dimen/question_space"
+            android:fontFamily="@font/moonhouse"
+            android:text="@string/quest4"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="@dimen/quest_font" />
+
+        <RadioGroup
+            android:id="@+id/quest_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/small_space"
+                android:layout_marginTop="@dimen/button_space"
+                android:background="@drawable/button_state"
+                android:button="@null"
+                android:fontFamily="@font/moonhouse"
+                android:paddingBottom="@dimen/button_space"
+                android:paddingTop="@dimen/button_space"
+                android:text="@string/ans4a"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/small_space"
+                android:layout_marginTop="@dimen/button_space"
+                android:background="@drawable/button_state"
+                android:button="@null"
+                android:fontFamily="@font/moonhouse"
+                android:paddingBottom="@dimen/button_space"
+                android:paddingTop="@dimen/button_space"
+                android:text="@string/ans4b"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/small_space"
+                android:layout_marginTop="@dimen/button_space"
+                android:background="@drawable/button_state"
+                android:button="@null"
+                android:fontFamily="@font/moonhouse"
+                android:paddingBottom="@dimen/button_space"
+                android:paddingTop="@dimen/button_space"
+                android:text="@string/ans4c"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/question_space"
+                android:layout_marginTop="@dimen/button_space"
+                android:background="@drawable/button_state"
+                android:button="@null"
+                android:fontFamily="@font/moonhouse"
+                android:paddingBottom="@dimen/button_space"
+                android:paddingTop="@dimen/button_space"
+                android:text="@string/ans4d"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/question_space"
+            android:layout_marginStart="@dimen/question_space"
+            android:layout_marginTop="@dimen/question_space"
+            android:fontFamily="@font/moonhouse"
+            android:text="@string/quest5"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="@dimen/quest_font" />
+
+        <CheckBox
+            android:id="@+id/check_one"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/small_space"
+            android:layout_marginTop="@dimen/button_space"
+            android:background="@drawable/button_state"
+            android:button="@null"
+            android:fontFamily="@font/moonhouse"
+            android:paddingBottom="@dimen/button_space"
+            android:paddingTop="@dimen/button_space"
+            android:text="@string/ans5a"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/check_two"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/small_space"
+            android:layout_marginTop="@dimen/button_space"
+            android:background="@drawable/button_state"
+            android:button="@null"
+            android:fontFamily="@font/moonhouse"
+            android:paddingBottom="@dimen/button_space"
+            android:paddingTop="@dimen/button_space"
+            android:text="@string/ans5b"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/check_three"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/small_space"
+            android:layout_marginTop="@dimen/button_space"
+            android:background="@drawable/button_state"
+            android:button="@null"
+            android:fontFamily="@font/moonhouse"
+            android:paddingBottom="@dimen/button_space"
+            android:paddingTop="@dimen/button_space"
+            android:text="@string/ans5c"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/check_four"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/question_space"
+            android:layout_marginTop="@dimen/button_space"
+            android:background="@drawable/button_state"
+            android:button="@null"
+            android:fontFamily="@font/moonhouse"
+            android:paddingBottom="@dimen/button_space"
+            android:paddingTop="@dimen/button_space"
+            android:text="@string/ans5d"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/question_space"
+            android:layout_marginEnd="@dimen/question_space"
+            android:layout_marginStart="@dimen/question_space"
+            android:layout_marginTop="@dimen/question_space"
+            android:background="@drawable/button_submit"
+            android:fontFamily="@font/moonhouse"
+            android:text="@string/submit"
+            android:textColor="@color/colorAccent" />
+    </LinearLayout>
+</ScrollView>

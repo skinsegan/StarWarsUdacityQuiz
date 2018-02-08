@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark"
+    tools:context="com.example.android.starwarsquiz.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/logo_height"
+            android:layout_marginEnd="@dimen/large_space"
+            android:layout_marginStart="@dimen/large_space"
+            android:layout_marginTop="@dimen/question_space"
+            android:contentDescription="StarWarsQuiz"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/question_space"
+            android:fontFamily="@font/moonhouse"
+            android:text="@string/jedi_question"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/quest_font_large" />
+
+        <EditText
+            android:id="@+id/name_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/question_space"
+            android:layout_marginEnd="@dimen/button_space"
+            android:layout_marginStart="@dimen/button_space"
+            android:layout_marginTop="@dimen/button_space"
+            android:fontFamily="@font/moonhouse"
+            android:hint="@string/enter_name"
+            android:inputType="textCapWords"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/colorPrimary" />
+
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="@dimen/small_space"
+            android:layout_marginStart="@dimen/small_space"
+            android:layout_marginTop="@dimen/button_space"
+            android:background="@drawable/button"
+            android:fontFamily="@font/moonhouse"
+            android:text="@string/start"
+            android:textColor="@color/colorAccent" />
+
+    </LinearLayout>
+
+</ScrollView>
